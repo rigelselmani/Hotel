@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-    width: 120rem;
+    max-width: 120rem;
     margin: 8rem auto;
     background-color: white;
 }
@@ -52,12 +52,15 @@ input {
     border-radius: 100px;
     margin-right: -3.7rem;
     padding: 1rem;
-    width: 90%;
+    width: 80%;
     background-color: rgb(240, 238, 238);
+    transition: all .2s;
 }
 
 input:focus {
     outline: none;
+    width: 90%;
+    transition: all .2s;
 }
 
 .Search-btn {
@@ -73,18 +76,45 @@ input:focus {
 }
 
 .user-nav {
+    align-self: stretch;
     display: flex;
     align-items: center;
-    background-color: red;
+}
+
+.icon-box {
+    position: relative;
+    margin-right: 3rem;
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+}
+
+.notification {
+    align-self: stretch;
+    position: absolute;
+    background-color: rgb(10, 70, 148);
+    color: white;
+    border-radius: 100px;
+    width: 2rem;
+    text-align: center;
+    top: 1.1rem;
+    left: 1.7rem;
+    font-size: 1.2rem;
 }
 
 .user-info {
+    padding-right: 2rem;
     display: flex;
     align-items: center;
 }
 
 .user-img {
-    width: 4rem;
+    width: 3.8rem;
+    height: 3.8rem;
     border-radius: 100px;
-    ;
+}
+
+.user-name {
+    margin-left: 1rem;
+    font-size: 1.5rem;
 }
