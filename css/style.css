@@ -34,6 +34,7 @@ header {
     justify-content: space-between;
     align-items: center;
     color: rgb(10, 70, 148);
+    border-bottom: 1px solid rgb(219, 219, 219);
 }
 
 .fa-heading {
@@ -144,7 +145,12 @@ input:focus {
     font-size: 1.5rem;
     padding: 1.6rem 0 1.6rem 4.5rem;
     align-self: stretch;
-    color: white
+    color: white;
+    margin-top: .3rem;
+}
+
+.item:hover {
+    background-color: rgb(10, 70, 148);
 }
 
 .item:nth-child(1) {
@@ -191,11 +197,26 @@ input:focus {
 .overview {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid rgb(219, 219, 219);
 }
 
 .overview-name {
     display: flex;
     align-items: center;
+    height: 6rem;
+}
+
+.hotel-name {
+    font-size: 2rem;
+    font-weight: 100;
+    padding: 1.5rem 3rem;
+    flex: stretch;
+    color: grey;
+}
+
+.star {
+    font-size: 1.5rem;
+    color: gold;
 }
 
 .overview-loc-rating {
@@ -205,4 +226,50 @@ input:focus {
 
 .overview-location {
     display: flex;
+    border-bottom: 1px solid currentColor;
+    cursor: pointer;
+    transition: all .2s;
+    padding-bottom: .5rem;
+}
+
+.overview-location:hover {
+    color: grey;
+}
+
+.location {
+    font-size: 1.9rem;
+    width: 1.7rem;
+    transition: all .2s;
+    height: 1.7rem;
+}
+
+.loc-btn {
+    background-color: white;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding-left: .3rem;
+}
+
+.loc-btn:hover {
+    color: grey;
+}
+
+.loc-btn:focus {
+    outline: none;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, .25);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
 }
