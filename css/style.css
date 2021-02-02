@@ -197,7 +197,7 @@ input:focus {
 .overview {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid rgb(219, 219, 219);
+    border-bottom: 1px solid rgb(248, 247, 247);
 }
 
 .overview-name {
@@ -228,12 +228,23 @@ input:focus {
     display: flex;
     border-bottom: 1px solid currentColor;
     cursor: pointer;
-    transition: all .2s;
     padding-bottom: .5rem;
+}
+
+.overview-location:hover .loc-btn {
+    color: grey;
 }
 
 .overview-location:hover {
     color: grey;
+}
+
+.overview-location:hover {
+    color: grey;
+}
+
+.location:focus .loc-btn {
+    color: red;
 }
 
 .location {
@@ -251,8 +262,8 @@ input:focus {
     padding-left: .3rem;
 }
 
-.loc-btn:hover {
-    color: grey;
+.loc-btn:focus {
+    animation: pulsate 1s infinite;
 }
 
 .loc-btn:focus {
@@ -272,4 +283,26 @@ input:focus {
         transform: scale(1);
         box-shadow: none;
     }
+}
+
+.overview-rating {
+    background-color: rgb(10, 70, 148);
+    color: white;
+    align-self: stretch;
+    padding: 0rem 2rem;
+    margin-left: 1rem;
+    ;
+}
+
+.rating-average {
+    font-size: 2.6rem;
+    text-align: center;
+    height: 35px;
+}
+
+.rating-count {
+    font-size: .8rem;
+    width: 4rem;
+    text-align: center;
+    white-space: nowrap;
 }
