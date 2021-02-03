@@ -376,7 +376,84 @@ input:focus {
 
 .reviews {
     display: flex;
+    flex-direction: column;
     align-items: center;
     flex: 1;
+    line-height: 2.25rem;
+    justify-content: space-between;
+    background-color: rgb(240, 238, 238);
+}
+
+.user-reviews {
     background-color: white;
+    padding: 3rem;
+}
+
+.user-reviews:nth-child(1) {
+    margin-bottom: 3rem;
+}
+
+.review-user {
+    display: flex;
+    align-items: center;
+    padding-top: 1.8rem;
+}
+
+.review-img {
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 100px;
+}
+
+.user-box {
+    margin-right: auto;
+    padding-left: 1rem;
+}
+
+.review-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.review-date {
+    font-size: 1rem;
+}
+
+.review-rating {
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: rgb(10, 70, 148);
+}
+
+.show-btn {
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    background-color: rgb(240, 238, 238);
+    border: none;
+    color: rgb(10, 70, 148);
+    border-bottom: 1px solid rgb(10, 70, 148);
+    ;
+}
+
+.show-btn:hover {
+    color: grey;
+    border-bottom: 1px solid grey;
+}
+
+.show-btn:hover .fa-arrow-right {
+    padding-left: .7rem;
+    color: grey;
+}
+
+.show-btn:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
+}
+
+.fa-arrow-right {
+    font-weight: 100;
+    font-size: 1.5rem;
+    padding-left: .4rem;
+    -webkit-text-stroke: -.01px black;
 }
