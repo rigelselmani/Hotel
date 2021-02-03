@@ -457,3 +457,66 @@ input:focus {
     padding-left: .4rem;
     -webkit-text-stroke: -.01px black;
 }
+
+
+/* /////////////////////////////////
+// BOOK BUTTON */
+
+.book-btn {
+    text-align: center;
+    margin: 3rem;
+}
+
+.book-now {
+    font-size: 2rem;
+    font-weight: 100;
+    color: grey;
+    padding-bottom: 2rem;
+    transition: all .1s;
+    overflow: hidden;
+}
+
+.btn {
+    position: relative;
+    background-image: linear-gradient(to right bottom, rgb(46, 133, 221), rgb(10, 70, 148));
+    border: none;
+    text-transform: uppercase;
+    border-radius: 100px;
+    color: white;
+    overflow: hidden;
+    width: 23rem;
+    height: 6rem;
+    transition: all .1s;
+}
+
+.btn:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
+}
+
+.visible {
+    position: absolute;
+    left: 8rem;
+    top: 2.4rem;
+    transition: all .1s;
+}
+
+.invisible {
+    position: absolute;
+    top: -3rem;
+    left: 4.5rem;
+    white-space: nowrap;
+    transition: all .1s;
+}
+
+.btn:hover .invisible {
+    top: 2.5rem;
+    left: 4.7rem;
+    transition: all .1s;
+}
+
+.btn:hover .visible {
+    top: 6rem;
+    left: 8rem;
+    transition: all .1s;
+}
