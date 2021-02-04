@@ -1,4 +1,4 @@
 # Hotel
 
 
-link to project https://rigelselmani.github.io/Hotel/
+link to project the https://rigelselmani.github.io/Hotel/
