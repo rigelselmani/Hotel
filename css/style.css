@@ -618,3 +618,16 @@
             align-self: stretch;
         }
     }
+    
+    @media only screen and (max-width:550px) {
+        .item {
+            display: flex;
+            flex-direction: column;
+        }
+        .icons {
+            margin: auto;
+        }
+        .photo {
+            height: 11rem;
+        }
+    }
